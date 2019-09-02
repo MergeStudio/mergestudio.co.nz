@@ -1,3 +1,5 @@
+
+
 #p-lang-input {
     width:250px
 }
@@ -17,7 +19,7 @@ body{
 
 header{
   
-    background-color: #000;
+
     text-align: center;
     padding: 20px;
 }
@@ -26,12 +28,16 @@ nav{
     background-color: #ffffff;
     justify-content: center;
     border-radius: 25px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 nav a{
     color: #000;
     text-decoration: none;
     text-align: center;
     padding: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .row{
     display:flex;
@@ -44,6 +50,8 @@ aside{
     text-align: center;
     padding: 20px;
     border-radius: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 section{
     flex: 70%;
@@ -105,7 +113,7 @@ table,tr,td,th{
 }
 
 .nav1 a:hover, nav a:hover{
-    background-color: #00a72a;
+    background-color: #a2aaa4;
     color: #fff;
     border-radius: 25px;
 }
@@ -115,3 +123,66 @@ table,tr,td,th{
     color: #fff;
     border-radius: 25px;
 }
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #ffffff 50%, rgb(106, 108, 109) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+  #d1{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #pic{
+      border-radius: 20px
+  }
