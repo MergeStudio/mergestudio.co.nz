@@ -18,8 +18,6 @@ body{
 }
 
 header{
-  
-
     text-align: center;
     padding: 20px;
 }
@@ -44,20 +42,17 @@ nav a{
     flex-wrap: wrap;
 }
 
-aside{
+.head-title{
     flex: 30%;
-    background-color: #0059ce;
+    background-color: #ff0000;
     text-align: center;
     padding: 20px;
     border-radius: 25px;
     padding-left: 10%;
     padding-right: 10%;
 }
-section{
-    flex: 70%;
-    padding: 20px;
-    background-color: #37b0d4;
-    border-radius: 25px;
+.head-title{
+    
 }
 
 
@@ -103,7 +98,7 @@ footer{
     padding: 20px;
 }
 table,tr,td,th{
-    border: 2px solid #15181a;
+    border: 2px solid #1573b3;
     border-collapse: collapse;
     text-align: center;
     width: 25%;
@@ -133,7 +128,7 @@ html {
   
   .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #ffffff 50%, rgb(106, 108, 109) 50%);
+    background-image: linear-gradient(-60deg, #ffffff 50%, rgb(0, 0, 0) 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -168,7 +163,6 @@ html {
   h1 {
     font-family:monospace;
   }
-  
   @keyframes slide {
     0% {
       transform:translateX(-25%);
@@ -177,12 +171,26 @@ html {
       transform:translateX(25%);
     }
   }
-
   #d1{
     padding-left: 15%;
     padding-right: 15%;
   }
-
   #pic{
       border-radius: 20px
+  }
+
+  #media1{   
+    padding-left: 70%;
+    padding-right: 10%;
+  }
+ 
+  #fb1{
+    width: 20%;
+    height: 20%;
+    border-radius: 15px
+  }
+
+  #ig1{
+    width: 20%;
+    height: 20%;
   }
