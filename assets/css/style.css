@@ -44,16 +44,18 @@ nav a{
 
 .head-title{
     flex: 30%;
-    background-color: #ff0000;
-    text-align: center;
-    padding: 20px;
-    border-radius: 25px;
+    /*background: linear-gradient(168deg,#E7017D 0%, #61a4ba 15%, #f55234 6%, #f279bb 85% ,#f55234 60%, #799000);*/
+    background: linear-gradient(168deg, #f3f9fb, )
+    background: #173e43;
+    text-align: center;    padding: 20px;
+    left: -50%;
+    border-radius: 5px;
     padding-left: 10%;
     padding-right: 10%;
 }
-.head-title{
-    
-}
+.head-title span{
+    color: #fff;
+  }
 
 
 .main{
@@ -128,7 +130,7 @@ html {
   
   .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #ffffff 50%, rgb(0, 0, 0) 50%);
+    background-image: linear-gradient(-60deg, #3fb0ac 50%, #fae596 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
