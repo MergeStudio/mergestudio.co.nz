@@ -44,14 +44,16 @@ nav a{
 
 .head-title{
     flex: 30%;
-    /*background: linear-gradient(168deg,#E7017D 0%, #61a4ba 15%, #f55234 6%, #f279bb 85% ,#f55234 60%, #799000);*/
-    background: linear-gradient(168deg, #f3f9fb, )
-    background: #173e43;
-    text-align: center;    padding: 20px;
+    /*background: linear-gradient(168deg,#E7017D 0%, #61a4ba 15%, #f55234 6%, #f279bb 85% ,#f55234 60%);*/
+    /*background: linear-gradient(168deg, #f3f9fb, )*/
+    background: Linear-gradient(142deg, #4D9DE0 0%, #E15554 80%, #E1BC29 6%, #3BB273 85%, #7768AE 60%);
+    text-align: center;    
+    padding: 20px;
     left: -50%;
     border-radius: 5px;
     padding-left: 10%;
     padding-right: 10%;
+    font-family: 
 }
 .head-title span{
     color: #fff;
