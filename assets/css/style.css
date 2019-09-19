@@ -93,16 +93,13 @@ ul {
     padding-inline-start: 40px;
 }
 
-
-
-
 nav{
     display: flex;
     background-color: #ffffff;
-    justify-content: center;
-    border-radius: 25px;
+    justify-content: right;
+    border-radius: 10px;
     padding-left: 20%;
-    padding-right: 20%;
+    padding-right: 15%;
 }
 nav a{
     color: #000;
@@ -242,6 +239,7 @@ html {
   h1 {
     font-family:monospace;
   }
+
   @keyframes slide {
     0% {
       transform:translateX(-25%);
@@ -254,21 +252,24 @@ html {
     padding-left: 15%;
     padding-right: 15%;
   }
+  
   #pic{
       width: 200px;
   }
 
   #media1{   
+    display: flex;
     padding-left: 70%;
     padding-right: 10%;
   }
  
   #fb1{
-    height: 50%;
-     width: 50%;
+    height: 50px;
+    width: 50px;
     border-radius: 15px;
   }
 
   #ig1{
- 
+    height: 50px;
+    width: 50px;
   }
