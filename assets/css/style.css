@@ -254,7 +254,8 @@ html {
   }
   
   #pic{
-      width: 200px;
+      width: 450px;
+      height: 300px;
   }
 
   #media1{   
@@ -272,4 +273,10 @@ html {
   #ig1{
     height: 50px;
     width: 50px;
+  }
+
+  #mediadiv{
+    padding-left: 90%;
+    padding-right:60%;
+    justify-content: right;
   }
