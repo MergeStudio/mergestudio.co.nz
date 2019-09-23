@@ -16,9 +16,21 @@ body{
     background-color:#ffffff;
 }
 
-header{
-    text-align: center;
+.header-nav{
     padding: 5px;
+    margin: 0;
+    background-image: url("/assets/img/night-traffic.jpg");
+    
+    background-size: cover;
+}
+
+#merge-logo{
+  width: 100%;
+  width: 350px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right:10px;
 }
 
 .social-line{
@@ -252,10 +264,7 @@ html {
     padding-right: 15%;
   }
   
-  #pic{
-      width: 450px;
-      height: 300px;
-  }
+  
 
   #media1{   
     display: flex;
