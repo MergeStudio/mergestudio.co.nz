@@ -14,50 +14,70 @@
 </head>
 
 <body>
-    <!--Background-->
-    <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg3"></div>
-        
-    <!--social media links-->
+    <div class ="picture">
     <header>
-        <div id = mediadiv>
-            <nav id = "media1">
-                <a class="link" href="https://facebook.com" target="_blank"> <img src= "./assets/img/facebookimage.jpg" alt="fb1" id = "fb1"></img></a>
-                <a class="link" href="https://www.instagram.com/mergestudionz/" target="_blank"> <img src="./assets/img/instagrampic1.jpg"height = "50%" width = "50%"alt="ig1" id = "ig1"/></img></a>
+        <!--social media links-->
+        <div id = media-outer> 
+            <nav id = "media-inner"> 
+                <a class="link" href="https://facebook.com" target="_blank"> 
+                    <img id="facebook" src= "./assets/img/facebookimage.jpg" alt="fb1"></img>
+                </a>
+                <a class="link" href="https://www.instagram.com/mergestudionz/" target="_blank"> 
+                    <img id="instagram" src="./assets/img/instagrampic1.jpg" alt="instagram"></img>
+                </a>
             </nav>
-        </div>
-        <!--Merge Studio Logo-->
-        <img id = "logo" src="./Our logos/Merge Studio 1.png" alt="Merge Studio"></img>
-    </header>
-    <main>
-        <!--Camera and Source Code Icons-->
-        <div id = "d1">
-            <nav>
-                <a href="index.html"><i class="fas fa-camera"></i></a>
-                <a href="index2.html"><i class="fas fa-code"></i></a>
-            </nav>
-
-        <!--Sub Title Photography Solutions-->
-        <div class = "head-title">
-            <h2>Photography Solutions</h2>
-        </div>
-        
-        <section>
-            <h2>Photography Presets</h2>
-            <p>A preset is a configuration of settings, designed to achieve a certain look or style of your photo. With just one click on a preset, your photo can be altered to have a film look or to achieve the tones you desired</p>
-            
-            <br/>
-            <h2>Advertising</h2>
-            <p>Advertise your portfolio</p>
-        </section>
         </div>
     
+        
+        <!--Head Title Photography Solutions-->
+        
+        <h2 class = "main-title">Merge Studio</h2>
+        <nav class="nav-bar">
+            <a>Online Classes</a>
+            <a>Community</a>
+            <a href="#">Login</a>
+            <a href="#">Sign up</a>
+        </nav>
+    </header>
+
+    <main id = main-container>
+
+        <section class= "section-container">
+            <div >
+                <ul class= "ul-container">
+                    <li class="box-info">
+                        Gain access to personalised, affordable and proffessional <span>photography presets</span> from your favourite photographers and content creators.
+                    </li>
+
+                    <li class="box-info">
+                        Start developing your <span>unique style </span> using our library of resources; including  <span>online professional workshops</span>, <span>interactive communities</span>, and <span>competitions</span>. 
+                    </li>
+                        
+                    <li class="box-info">
+                        Advertise your photography to clients nearby in a professional manner that will build your status as a freelance photographer.
+                    </li>
+                </ul>
+            </div>
+            <!--<h1 class= "sub-title">Develop the <span class="highlight"> unique style </span> you are looking for that portays your photography talents</h1> 
+            <p class= "paragraph">Merge Studio provides users with access to presets and content directly from proffessionals </p>!-->
+            
+            <br/>
+            <h1 class= "sub-title"></h1>
+            <p class= "paragraph"></p>
+        </section>
+
+
+        <!--button-->
+        <div id="border-button">
+            <button id="home-button">Join Now!</button>
+        </div>
+    </main>
+    </div>
         <!--copyright footer-->
-        <footer>Copyright MergeStudio 2019</footer>
+        <footer>Copyright &copy; MergeStudio 2020</footer>
 
         <script src="https://kit.fontawesome.com/d32396bb69.js"></script>
         <script src="./assets/js/main.js"></script>
-    </main>
+    
 </body>
 </html>
