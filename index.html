@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <meta name= "description" content= "Photography content, media, and social hub">
 	<meta name= "keywords" content= "photography, photography presets, photography advertisements ">
 	<meta name= "author" content="Albert Jordaan, Sam Hewitt">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/style.css">
+    
+
 
     <title>Merge Studio | Welcome</title>
 </head>
@@ -17,53 +21,59 @@
     
 
     <main id = main-container>
-   
         
+        <div class="wrap push">
+
             <!--video inside of text!-->
             <div class="banner">
                 <video autoplay muted loop>   
-                <source src="assets/mp4/video8.mp4" type="video/mp4">      
+                <source src="assets/mp4/video5.mp4" type="video/mp4">      
                 </video>  
                 <h2 class="banner-title">Merge <span class ="studio">Studio</span></h2>
             </div>
-        </div>
-        
 
-        <header>
-            <div class="img-container">
-                <img class= "main-title" src="/assets/img/ColorLogo.png" alt="MergeStudio">
-                </div>
-        
-            <!--Head Title Photography Solutions-->
-            <div class="main-nav">
-                <nav class="nav-bar">
-                    <a class="home" href="#">Home</a>
-                    <a class="resources" href="#">resources</a>
-                    <a class="community" href="#">community</a>
-                    <a class="aboutUs" href="#">about us</a>
-                    <a class="login" href="#">login</a>
-                    <a class="signup" href="#">sign up</a>
+            <header>
+                <!-- collapsable nav menu  -->
+                <a href="#menu" class="menu-link">&#9776;</a>
+            </header>
+
+            <div id = media-outer> 
+                <nav id = "media-inner"> 
+                    <a class="link" href="https://facebook.com" target="_blank"> 
+                        <img id="facebook" src= "./assets/img/facebookimage.jpg" alt="fb1"></img>
+                    </a>
+                    <a class="link" href="https://www.instagram.com/mergestudionz/" target="_blank"> 
+                        <img id="instagram" src="./assets/img/instagrampic1.jpg" alt="instagram"></img>
+                    </a>
                 </nav>
             </div>
-        </header>
 
-        <div id="border-button">
-            <button id="home-button">What we do?</button>
+            <div id="border-button">
+                <button id="home-button">Begin Your Journey!</button>
+            </div>
         </div>
-
         <!--social media links-->
     </main>
+    <nav id="menu" class="panel" role="navigation">
+        <img class= "logo" src="/assets/img/ColorLogo.png" alt="MergeStudio">
+        <ul class="menu-ul">
+            <li><i class="arrow right"></i><a class= "current" href="#">Home</a></li>
+            <li><i class="arrow right"></i><a href="#">Resources</a></li>
+            <li><i class="arrow right"></i><a href="#">My Studio</a></li>
+            <li><i class="arrow right"></i><a href="#">Community</a></li>
+            <li><i class="arrow right"></i><a href="#">Contact Us</a></li>
+            <li><i class="arrow right"></i><a href="#">Sign Up</a></li>
+        </ul>
+    </nav>
 
-    <div id = media-outer> 
-        <nav id = "media-inner"> 
-            <a class="link" href="https://facebook.com" target="_blank"> 
-                <img id="facebook" src= "./assets/img/facebookimage.jpg" alt="fb1"></img>
-            </a>
-            <a class="link" href="https://www.instagram.com/mergestudionz/" target="_blank"> 
-                <img id="instagram" src="./assets/img/instagrampic1.jpg" alt="instagram"></img>
-            </a>
-        </nav>
-    </div>
+   
+    
+        
+
+
+    
+
+    
     
 
         <!-- <div >
@@ -88,6 +98,7 @@
 
         
         <script src="./assets/js/main.js"></script>
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="/assets/js/jquery.big-slide.js"></script>
 </body>
 </html>
