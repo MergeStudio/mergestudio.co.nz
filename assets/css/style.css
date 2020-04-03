@@ -65,12 +65,12 @@ i {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+  
 }
 
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  
 }
 
 body {
@@ -101,16 +101,17 @@ body {
 }
 
 .menu-link{
-  padding: 10%;
+  padding:10px;
   color: #000;
   text-decoration: none;
-  margin: 0px;
-  
+  margin: 10%;
+  font-size: 200%;
+  position: fixed;
 }
 
 /* video inside of text */
 
-.banner{
+.banner{  
   position: relative;
   width: 100%;
   height: 100%;
@@ -180,7 +181,7 @@ body {
   border-width: 7px;
   background-color: transparent;
   color: #000000;
-  border-color: #a02727;
+  border-color: #e0350a;
   font-weight: bold;
   text-transform: uppercase;
   top: 75%;
@@ -190,7 +191,7 @@ body {
 
 footer{
     position: relative;
-    height: 80px;
+    height: 10%;
     text-align: center;
     width: 100%;
     background-color: #2b3331;
@@ -201,7 +202,6 @@ footer{
 
 /* Social media links in Nav */
 #media-outer{
-  width: 100%;
   box-sizing: border-box;
   background-color: #2b3331;
   border-top: 2px #f3f56f solid;
@@ -211,14 +211,26 @@ footer{
 }
 
 #media-inner{   
-  display: flex;
-  margin-left: 48%;
+  
+  
   
 }
 
 #facebook{
-  width: 20px;
-  border-radius: 5px; 
+  text-decoration:none;
+  border:0;
+  width:32px;
+  height:32px;
+  padding:2px;
+  margin:5px;
+  color:#000000;
+  border-radius:50%;
+  background-color:#ffffff;
+}
+
+.niftybutton-facebook{
+  display:block;
+  fill:currentColor;
 }
 
 #instagram{
@@ -226,12 +238,14 @@ footer{
 }
 
 .link{
-  padding-right: 15px;
+  padding: 1%;
+  display:flex;
+  flex-wrap:wrap;
 }
 
 
 /* box containers of info*/
-/*
+
   .paragraph{
   color: #252d33;
   line-height: 70px;
@@ -241,34 +255,30 @@ footer{
 
 
 
-/ .ul-container{
+.ul-container{
   box-sizing: border-box;
   display: inline-flex;
-  text-align: center;
-
+  overflow: hidden;
+  
 }
 
-.box-info{
-  border: 2px #000 solid;
-  border-radius: 15px;
-  text-align: center;
-  margin: 20px;
-  padding: 50px;
+.image-container{
+  display:inline-flex;
   list-style: none;
-  box-shadow: 15px 18px 0px -8px #252d33;
-  border-color: #7ffad1;
-  color: #140606;
-  background-color: #8de5f5;
-  border-radius: 40px;
-  border-width: 10px;
-  width: 33%;
-  opacity: 80%;
-  font-weight: bold;
-  font-size: 1.2em;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 1%;
+}
+
+.unfiltered{
+  border: #000 1px solid;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vh;
+  
+  /* background-color: #326063; */
 }
 
 span{
   color: #e0350a;
   font-family: Arial, Helvetica, sans-serif;
-} */
+}
