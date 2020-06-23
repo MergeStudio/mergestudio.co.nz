@@ -10,16 +10,27 @@
 	<meta name= "author" content="Albert Jordaan, Sam Hewitt">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Slider scripts-->
+    <script
+    type="module"
+    src="https://unpkg.com/img-comparison-slider@latest/dist/component/component.esm.js"
+  ></script>
+  <script
+    nomodule=""
+    src="https://unpkg.com/img-comparison-slider@latest/dist/component/component.js"
+  ></script>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/img-comparison-slider@latest/dist/collection/styles/initial.css"
+/>    
     <link rel="stylesheet" href="./assets/css/style.css">
     
-
+    
 
     <title>Merge Studio | Welcome</title>
 </head>
 
 <body>
-    
-
     <main id = main-container>
         
         <div class="wrap push">
@@ -27,7 +38,7 @@
             <!--video inside of text!-->
             <div class="banner">
                 <video autoplay muted loop>   
-                <source src="assets/mp4/video5.mp4" type="video/mp4">      
+                <source src="assets/mp4/video15.mp4" type="video/mp4">      
                 </video>  
                 <h2 class="banner-title">Merge Studio</h2>
             </div>
@@ -46,45 +57,59 @@
              <!--social media links-->
              <div id = media-outer> 
                 <nav id = "media-inner"> 
-                    <div style="display:flex;flex-wrap:wrap">
-                        <a href="https://www.facebook.com/mergestudionz/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;border:0;width:32px;height:32px;padding:2px;margin:5px;color:#000000;border-radius:50%;background-color:#ffffff;"><svg class="niftybutton-facebook" style="display:block;fill:currentColor" data-tag="fac" data-name="Facebook" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
-                        <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path>
-                    </svg></a></div>
-                    <a class="link" href="https://www.instagram.com/mergestudionz/" target="_blank"> 
-                        <img id="instagram" src="./assets/img/insta grampic1.jpg" alt="instagram"></img>
+                    <div id="media-div">
+                        <a href="https://www.facebook.com/mergestudionz/" target="_blank" rel="noopener noreferrer">
+                            <svg class="niftybutton-facebook" data-tag="fac" data-name="Facebook" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                                <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <a href="https://www.instagram.com/mergestudionz/" target="_blank"> 
+                        <img id="instagram" src="./assets/img/instagrampic1.jpg" alt="instagram"></img>
                     </a>
                     
                 </nav>
             </div>
-
-            
-        
         </div> 
         
-        
+        <div class= "photos-container">
             <ul class= "ul-container">
                 <li class="image-container">
                     <img class= "unfiltered" src="/assets/img/model.jpg"></img>
                 </li>
             </ul>
-        
 
-        
-
-        
             <ul class= "ul-container">
                 <li class="image-container">
                     <img class= "unfiltered" src="/assets/img/polaroid.jpg"></img>
                 </li>
             </ul>
-            <ul>
+
+            <ul class="ul-container">
                 <li class="image-container">
                     <img class= "unfiltered" src="/assets/img/polaroid2.jpg"></img>
                 </li>
             </ul>
+
+            <ul class="ul-container">
+                <li class="image-container">
+                    <img class= "unfiltered" src="/assets/img/dogcloseup.jpg"></img>
+                </li>
+            </ul>
+            <ul class="ul-container">
+                <li class="image-container">
+                        <img-comparison-slider>
+                        <img class= "unfiltered" slot="before" src="assets/img/polaroid.jpg" />
+                        <img class= "unfiltered"slot="after" src="assets/img/model.jpg" />
+                    </img-comparison-slider>
+                </li>
+            </ul>
         
-        
-           
+        <div>
+
+            
+
         
     </main>
 
@@ -102,15 +127,12 @@
         </ul>
     </nav>
     
-
-        
-        
-    
         <!--copyright footer-->
         <footer>Copyright &copy; MergeStudio 2020</footer>
 
-        
         <script src="./assets/js/main.js"></script>
+        
+        <!--Jquery & Hamburger Menu-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="/assets/js/jquery.big-slide.js"></script>
 </body>

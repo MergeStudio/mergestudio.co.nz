@@ -50,6 +50,7 @@ header{
   width: 15.625em; /*should match the above value*/
 }
 
+
 /*  
   Demo Specific Styles
   ====================
@@ -143,8 +144,6 @@ body {
   border: #000 10px solid;
   background: linear-gradient( to bottom, #fffffffa 20%, transparent);
   /* background: #fff; */
-  
-  
 }
 
 /* ----------- Non-Retina Screens ----------- */
@@ -181,7 +180,7 @@ body {
   border-width: 7px;
   background-color: transparent;
   color: #000000;
-  border-color: #e0350a;
+  border-color: #6cc993;
   font-weight: bold;
   text-transform: uppercase;
   top: 75%;
@@ -207,45 +206,54 @@ footer{
   border-top: 2px #f3f56f solid;
   padding-top: 5px;
   text-align: center;
-  
 }
 
 #media-inner{   
   
-  
-  
 }
 
-#facebook{
+#media-div{
+  display: inline-flex;
+  box-sizing: border-box;
+}
+
+#media-div a{
   text-decoration:none;
   border:0;
   width:32px;
   height:32px;
-  padding:2px;
   margin:5px;
   color:#000000;
   border-radius:50%;
   background-color:#ffffff;
+  box-sizing: border-box;
+}
+
+#facebook{
+  text-decoration: none;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  margin: 5px;
+  color: #000;
+  background-color: #ffffff;
 }
 
 .niftybutton-facebook{
-  display:block;
-  fill:currentColor;
+  display: flex;
+  fill: currentColor;
 }
 
 #instagram{
   width: 20px;
-}
-
-.link{
-  padding: 1%;
-  display:flex;
-  flex-wrap:wrap;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
 }
 
 
 /* box containers of info*/
-
   .paragraph{
   color: #252d33;
   line-height: 70px;
@@ -253,32 +261,42 @@ footer{
   text-transform: uppercase;
 } 
 
-
+/*photo gallery*/
+.photos-container{
+  /* background-color: #000; */
+}
 
 .ul-container{
-  box-sizing: border-box;
-  display: inline-flex;
-  overflow: hidden;
-  
+  display: inline-flex; 
 }
 
 .image-container{
-  display:inline-flex;
   list-style: none;
-  padding: 1%;
+  border: #fff 2px ;
 }
 
 .unfiltered{
-  border: #000 1px solid;
-  color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vh;
-  
-  /* background-color: #326063; */
+  border-radius: 10px;
+  padding: 1%;
+  background-color: rgb(27, 37, 49);
 }
 
 span{
   color: #e0350a;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*Comparison slider CSS */
+
+img-comparison-slider {
+  --divider: 3px solid #c0c0c0;
+  --hint-opacity: 0.3;
+  
+}
+
+
+
+
