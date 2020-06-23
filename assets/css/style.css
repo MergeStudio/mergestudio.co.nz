@@ -87,7 +87,8 @@ body {
 }
 
 .panel {
-  background: #d6ce29;
+  background: #97dfb5;
+ 
   color: #000;
 }
 
@@ -175,15 +176,14 @@ body {
 #home-button{
   position: absolute;
   text-align: center;
-  width: auto;
   border-radius: 20px;
   border-width: 7px;
   background-color: transparent;
   color: #000000;
-  border-color: #6cc993;
+  border-color: #97dfb5;
   font-weight: bold;
   text-transform: uppercase;
-  top: 75%;
+  top: 75vh;
   overflow: hidden;
   padding: 10px;
 }
@@ -225,7 +225,7 @@ footer{
   margin:5px;
   color:#000000;
   border-radius:50%;
-  background-color:#ffffff;
+  background-color:#fff;
   box-sizing: border-box;
 }
 
@@ -237,7 +237,7 @@ footer{
   padding: 2px;
   margin: 5px;
   color: #000;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .niftybutton-facebook{
@@ -281,7 +281,7 @@ footer{
   width: 100vh;
   border-radius: 10px;
   padding: 1%;
-  background-color: rgb(27, 37, 49);
+  background-color: #1b2531;
 }
 
 span{
