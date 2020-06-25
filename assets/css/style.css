@@ -62,17 +62,14 @@ header{
   list-style: none;
 }
 
-i {
+/* nav arrows */
+.right-dir{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-  
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
 }
 
 body {
@@ -180,7 +177,7 @@ body {
   border-width: 7px;
   background-color: transparent;
   color: #000000;
-  border-color: #97dfb5;
+  border-color: #2b3331;
   font-weight: bold;
   text-transform: uppercase;
   top: 75vh;
@@ -199,58 +196,69 @@ footer{
     border-top: 2px #f3f56f solid;
 }
 
-/* Social media links in Nav */
-#media-outer{
+/* new social media icons */
+.media-outer{
   box-sizing: border-box;
   background-color: #2b3331;
   border-top: 2px #f3f56f solid;
-  padding-top: 5px;
-  text-align: center;
+  border-bottom: 2px #f3f56f solid;
 }
 
-#media-inner{   
+.effect{
+  width: 100%;
+}
+
+.buttons {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
   
 }
-
-#media-div{
-  display: inline-flex;
-  box-sizing: border-box;
+  
+.effect a {
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 25px;
+    overflow: hidden;
+    position: relative;
+    color: #212121;  
+    color:#fff;
+    background-color: #212121;
+    border: 2px solid #fff;
 }
 
-#media-div a{
-  text-decoration:none;
-  border:0;
-  width:32px;
-  height:32px;
-  margin:5px;
-  color:#000000;
-  border-radius:50%;
-  background-color:#fff;
-  box-sizing: border-box;
+  
+
+
+.effect a:last-child {
+      margin-right: 0px;
 }
 
-#facebook{
-  text-decoration: none;
-  border: 0;
-  width: 32px;
-  height: 32px;
-  padding: 2px;
-  margin: 5px;
-  color: #000;
-  background-color: #fff;
+
+/* thurio effect */
+  
+.effect.thurio a {
+    transition: border-radius 0.2s linear 0s;
+    transform: rotate(45deg);
+}
+    
+.effect.thurio i {
+      transition: transform 1s linear 0s;
+      transform: rotate(-45deg);
+      position: relative;
+      z-index: 3;
+}
+  
+.effect a:hover {
+      border-radius: 5px;
 }
 
-.niftybutton-facebook{
-  display: flex;
-  fill: currentColor;
-}
-
-#instagram{
-  width: 20px;
-  box-sizing: border-box;
-  width: 32px;
-  height: 32px;
-}
 
 
 /* box containers of info*/
@@ -309,6 +317,7 @@ footer{
 .preset-paragraph{
   line-height: 2.5em;
   font-style: italic;
+  font-size: 20;
 }
 
 img-comparison-slider {
