@@ -87,7 +87,7 @@ body {
 .panel {
   color: #000;
   font-family: Poppins;
-  background-color: #a4d9e0;
+  background-color: #e3e7dd;
 }
 
 .panel a {
@@ -176,13 +176,43 @@ body {
   border-radius: 20px;
   border-width: 7px;
   background-color: transparent;
-  color: #000000;
+  color: #000;
   border-color: #2b3331;
   font-weight: bold;
   text-transform: uppercase;
   top: 75vh;
   overflow: hidden;
   padding: 10px;
+}
+
+/* new button */
+#container{
+  display: flex;
+  justify-content: center;
+}
+
+/* Button Styles */
+
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #BFC0C0;
+  margin: 20px 20px 20px 20px;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+a {
+  color: #BFC0C0;
+  text-decoration: none;
+  letter-spacing: 1px;
 }
 
 footer{
@@ -201,7 +231,7 @@ footer{
   box-sizing: border-box;
   background-color: #2b3331;
   border-top: 2px #f3f56f solid;
-  border-bottom: 2px #f3f56f solid;
+  border-bottom: 1px #f3f56f solid;
 }
 
 .effect{
@@ -257,6 +287,9 @@ footer{
   
 .effect a:hover {
       border-radius: 5px;
+      border-color: #000000;
+      background-color: #fff;
+      color: #000;
 }
 
 
@@ -311,7 +344,6 @@ footer{
 .highlight-title{
   color: #e0350a;
   text-decoration: underline;
-  
 }
 
 .preset-paragraph{
@@ -328,6 +360,60 @@ img-comparison-slider {
 
 .pair{
   display: inline-flex;
+}
+
+/* new button */
+
+.button_container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border: 2px #000 solid 10px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: absolute;
+  top: 15%;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: transparent;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 15px 10px 0px 5px rgb(0, 0, 0, 02);
+  
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.button_container:hover{
+  color:#fff;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  
 }
 
 
