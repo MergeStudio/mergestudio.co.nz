@@ -44,18 +44,6 @@ header{
 }
 
 /* navbar */
-
-.panel {
-  position: fixed;
-  left: -15.625em; /*or width of your navigation panel*/
-  width: 15.625em; /*should match the above value*/
-}
-
-
-/*  
-  Demo Specific Styles
-  ====================
-*/
 .menu-ul{
   text-align: left;  
   padding-left: 30px;
@@ -66,7 +54,7 @@ header{
 .right-dir{
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  border: solid  black;
+  border: solid  #000;
   border-width: 1px 5px 5px 1px;
   display: inline-block;
   padding: 3px;
@@ -84,11 +72,14 @@ body {
 }
 
 .panel {
+  position: fixed;
+  left: -15.625em; /*or width of your navigation panel*/
+  width: 15.625em; /*should match the above value*/
   color: #000;
-  font-family: Poppins;
-  background: #ea6848;
-  border-right: 2px solid #e96645;
+  background: linear-gradient(120deg, #ddd2b2 25%,#bd5252);
+  border: 2px solid #c2a1a1;
   box-shadow: 0px 3px 10px rgba(33, 33, 33, 0.7);
+  z-index: 3;
 }
 
 .arrow.right-dir{
@@ -96,35 +87,52 @@ body {
 }
 
 .panel a {
-  padding-left: 15px;
   color: #000;
   font-weight: bold;
   line-height: 50px;
   font-size: 1.2em;
   text-decoration-line: none;
+  width: 100%;
+  padding: 5px 0px; 
+  text-transform: uppercase;
+  margin-left: -15px;
+}
+
+.panel a:hover{
+  
+}
+
+.panel a:active{
+  margin-left: -15px;
+  margin-bottom: -20px;
 }
 
 .panel-highlight{
   color: rgb(0, 0, 0);
   background-color: #e3ecea;
-  border: 2px rgb(0, 0, 0) solid;
+  border: 1px rgb(0, 0, 0) solid;
   padding: 5px 10px;
-  margin-right: 5px;
-  text-transform: uppercase;
-  
+  margin: 0px 0px 0px -2px;
 }
 
 .panel-left{
   letter-spacing: 5px;
-  color: #e3ecea;
+  color: #dee4e3;
+  padding: 5px 5px; 
+  background-color: #bd6969;
+  
+  border: 1px #000 solid; 
 }
 
 .menu-link{
-  color: #000;
+  color: #b85757;
   text-decoration: none;
   margin: 10%;
-  font-size: 180%;
   position: fixed;
+}
+
+.menu-link:hover{
+  
 }
 
 /* hamburger menu two */
