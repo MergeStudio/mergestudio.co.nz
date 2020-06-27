@@ -66,8 +66,8 @@ header{
 .right-dir{
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  border: solid black;
-  border-width: 0 3px 3px 0;
+  border: solid  black;
+  border-width: 1px 5px 5px 1px;
   display: inline-block;
   padding: 3px;
 }
@@ -81,23 +81,42 @@ body {
   position: relative;
   max-width: 100%;
   margin: 0 auto;
-
 }
 
 .panel {
   color: #000;
   font-family: Poppins;
-  background-color: #e3e7dd;
+  background: #ea6848;
+  border-right: 2px solid #e96645;
+  box-shadow: 0px 3px 10px rgba(33, 33, 33, 0.7);
+}
+
+.arrow.right-dir{
+  border-color: #fff;
 }
 
 .panel a {
   padding-left: 15px;
   color: #000;
-  text-transform: uppercase;
   font-weight: bold;
-  line-height: 40px;
+  line-height: 50px;
   font-size: 1.2em;
   text-decoration-line: none;
+}
+
+.panel-highlight{
+  color: rgb(0, 0, 0);
+  background-color: #e3ecea;
+  border: 2px rgb(0, 0, 0) solid;
+  padding: 5px 10px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  
+}
+
+.panel-left{
+  letter-spacing: 5px;
+  color: #e3ecea;
 }
 
 .menu-link{
@@ -107,6 +126,63 @@ body {
   font-size: 180%;
   position: fixed;
 }
+
+/* hamburger menu two */
+.menu-link.open span.m, .menu-link.open span.n, .menu-link.open span.u {
+  opacity: 1;
+}
+.menu-link span.m, .menu-link span.n, .menu-link span.u {
+  font-size: 1.05rem;
+  opacity: 0;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  letter-spacing: 2px;
+}
+.menu-link span.e {
+  display: inline-block;
+  height: 12px;
+  width: 17px;
+}
+.menu-link span.e.btn-close span.bar:nth-child(1) {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 5px;
+}
+.menu-link span.e.btn-close span.bar:nth-child(2) {
+  opacity: 0;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+.menu-link span.e.btn-close span.bar:nth-child(3) {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 5px;
+}
+.menu-link span.e span.bar {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  position: relative;
+  display: block;
+  background: #212121;
+  border-radius: 1px;
+  border-bottom: 1px solid #616161;
+  width: 15px;
+  height: 1px;
+}
+.menu-link span.e span.bar:nth-child(2) {
+  margin: 3px 0;
+}
+
+.menu-link:hover span.m, .menu-link:hover span.n, .menu-link:hover span.u {
+  opacity: 1;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
 
 /* video inside of text */
 
@@ -162,13 +238,6 @@ body {
       padding-top: 20%;
     }
 }
-
-#border-button{
-  display: flex;
-  justify-content: center;
-  text-align: center; 
-}
-
 
 #home-button{
   position: absolute;
@@ -262,9 +331,6 @@ footer{
     background-color: #212121;
     border: 2px solid #fff;
 }
-
-  
-
 
 .effect a:last-child {
       margin-right: 0px;
@@ -383,8 +449,18 @@ img-comparison-slider {
   background-color: transparent;
   padding: 17px 60px;
   margin: 0 auto;
-  box-shadow: 15px 10px 0px 5px rgb(0, 0, 0, 02);
-  
+  box-shadow: 0px 0px 0px 1px  rgb(255, 255, 255),
+              1px 1px 0px rgb(0, 0, 0),
+              2px 2px 0px rgb(0, 0, 0),
+              3px 3px 0px rgb(0, 0, 0),
+              4px 4px 0px rgb(0, 0, 0),
+              5px 5px 0px rgb(0, 0, 0),
+              6px 6px 0px rgb(0, 0, 0),
+              7px 7px 0px rgb(0, 0, 0),
+              8px 8px 0px rgb(0, 0, 0),
+              9px 9px 0px rgb(0, 0, 0),
+              9px 9px 0px rgb(0, 0, 0),
+              10px 10px 0px rgb(255, 255, 255);
 }
 
 .btn span {
@@ -394,6 +470,10 @@ img-comparison-slider {
 
 .button_container:hover{
   color:#fff;
+}
+
+.btn:active{
+  margin-top: 2px;
 }
 
 .btn:after {
@@ -415,6 +495,5 @@ img-comparison-slider {
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
   
 }
-
 
 

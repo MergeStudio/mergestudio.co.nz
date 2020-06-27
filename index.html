@@ -41,14 +41,23 @@
             </div>
 
             <header>
-                <!-- hamburger menu  -->
-                <a href="#menu" class="menu-link">&#9776;</a>
+                <a href="#menu" class="menu-link"> 
+                    <span class="m">M</span>
+                    <span class="e">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </span>
+                        <span class="n">N</span>
+                        <span class="u">U</span>
+                </a>
             </header>
-
-            <!-- button
-            <div id="border-button">
-                <button id="home-button">Begin Your Journey!</button>
+           
+            
+            <!-- <div class="nav-pane slide-out">
+                <h1>Navigation here.</h1>
             </div> -->
+
 
             <!--new button-->
             <div class="button_container">
@@ -157,13 +166,13 @@
     <nav id="menu" class="panel" role="navigation">
         <img class= "logo" src="/assets/img/ColorLogo.png" alt="MergeStudio">
         <ul class="menu-ul">
-            <li><i class="arrow right-dir"></i><a class= "current" href="#">Home</a></li>
-            <li><i class="arrow right-dir"></i><a href="#">Resources</a></li>
-            <li><i class="arrow right-dir"></i><a href="#">My Studio</a></li>
-            <li><i class="arrow right-dir"></i><a href="#">Community</a></li>
-            <li><i class="arrow right-dir"></i><a href="#">Contact Us</a></li>
-            <li><i class="arrow right-dir"></i><a href="#">Sign Up</a></li>
-            <li><i class="arrow right-dir"></i><a href="#">Login</a></li>
+            <li class="link-line"><a class= "current" href="#"><span class="panel-highlight">h</span><span class="panel-left">ome</span></a></li>
+            <li class="link-line"><a href="#"><span class="panel-highlight">m</span><span class="panel-left">y Studio</span></a></li>
+            <li class="link-line"><a href="#"><span class="panel-highlight">r</span><span class="panel-left">esources</span></a></li>
+            <li class="link-line"><a href="#"><span class="panel-highlight">c</span><span class="panel-left">ommunity</span></a></li>
+            <li class="link-line"><a href="#"><span class="panel-highlight">c</span><span class="panel-left">ontact Us</span></a></li>
+            <li class="link-line"><a href="#"><span class="panel-highlight">s</span><span class="panel-left">ign Up</span></a></li>
+            <li class="link-line"><a href="#"><span class="panel-highlight">l</span><span class="panel-left">ogin</span></a></li>
         </ul>
     </nav>
     
@@ -175,5 +184,8 @@
         <!--Jquery & Hamburger Menu-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="/assets/js/jquery.big-slide.js"></script>
+
+        <!-- second hamburger -->
+        <script src="assets/js/hamburger-menu.js"></script>
 </body>
 </html>
