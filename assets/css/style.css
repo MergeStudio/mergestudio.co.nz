@@ -247,21 +247,6 @@ body {
     }
 }
 
-#home-button{
-  position: absolute;
-  text-align: center;
-  border-radius: 20px;
-  border-width: 7px;
-  background-color: transparent;
-  color: #000;
-  border-color: #2b3331;
-  font-weight: bold;
-  text-transform: uppercase;
-  top: 75vh;
-  overflow: hidden;
-  padding: 10px;
-}
-
 /* new button */
 #container{
   display: flex;
@@ -383,36 +368,41 @@ footer{
 }
 
 .ul-container{
-  display: inline-flex; 
+  display: inline-flex;
 }
 
 .image-container{
-  list-style: none;
+  width: 100%;
+  border: #fff 2px solid;
 }
 
-.unfiltered{
+.gallery-img{
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vh;
-  border-radius: 10px;
+  width: auto;
   background-color: #1b2531;
+  max-width: 100%;
+  height: auto;
 }
 
 /*Comparison slider CSS & caption */
 .caption-container{   
   background-color: #1b2531;
   color: #fff;
-  width: 100vh;
-  border-radius: 10px;
   list-style: none;
-  padding: 200px 100px 100px 100px;
   font-weight: bold;
+  width: 100%;
+  border: #f3f56f 2px solid;
+}
+
+.inner-container{
+  margin: 30% 15%;
 }
 
 .preset-title{
-  font-size: 50px;
-  text-transform: capitalize;
-  margin-bottom: 50px;
+  
+  width: 100%;
+  font-size: 3em;
 }
 
 .highlight-title{
@@ -421,19 +411,13 @@ footer{
 }
 
 .preset-paragraph{
-  line-height: 2.5em;
-  font-style: italic;
-  font-size: 20;
+  font-size: 1.5em;
 }
 
 img-comparison-slider {
   --divider: 3px solid #c0c0c0;
   --hint-opacity: 0.6;
   z-index: 2;
-}
-
-.pair{
-  display: inline-flex;
 }
 
 /* new button */
@@ -450,7 +434,7 @@ img-comparison-slider {
   text-transform: uppercase;
   overflow: hidden;
   position: absolute;
-  top: 15%;
+  top: 75vh;
   color: #000;
   font-weight: bold;
   font-size: 16px;
