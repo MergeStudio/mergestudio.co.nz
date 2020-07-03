@@ -30,7 +30,6 @@
                 check=false;
             }
         }
-
         return check;
     });
 
@@ -64,8 +63,6 @@
         var thisAlert = $(input).parent();
 
         $(thisAlert).removeClass('alert-validate');
-    }
-    
-    
+    }   
 
 })(jQuery);
